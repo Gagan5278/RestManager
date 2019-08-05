@@ -203,7 +203,7 @@ extension RestManager {
             self.error = error
         }
         
-        //MARK- Check if file type. If user is delaing with files.
+        //MARK- Check if file type.
         private func checkFileMimeType(data: Data) -> Bool {
             var b: UInt8 = 0
             data.copyBytes(to: &b, count: 1)
